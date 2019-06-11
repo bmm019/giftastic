@@ -1,4 +1,8 @@
-var movies = ["Ted", "The Hangover", "Mean Girls", "Sweet Home Alabama", "Legally Blonde", "13 Going On 30", "A Star Is Born", "Deadpool", "Forrest Gump", ];
+$(document).ready(function() {
+    console.log( "ready!" );
+});
+
+var movies = ["Ted", "The Hangover", "Mean Girls", "Sweet Home Alabama", "Legally Blonde", "13 Going On 30", "A Star Is Born", "Deadpool", "Forrest Gump"];
 
 function renderButtons() {
 	$("#buttonsArea").empty(); // empties the buttonsArea div so we don't make duplicates
