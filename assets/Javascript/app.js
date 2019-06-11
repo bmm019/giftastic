@@ -27,7 +27,7 @@ function displayGifs() {
 		console.log(response);
         var response = response.data;
     
-    		// creates a div that contains a still image gif and rating info for each response item
+    	// creates a div that contains a still image gif and rating info for each response item
 		for (var i = 0; i < response.length; i++) {
 			var gifDiv = $("<div>");
 			gifDiv.addClass("gifDiv");
@@ -53,7 +53,7 @@ function displayGifs() {
 	});
 }
 
-// when the submit button is clicked, the input value is pushed to the tvShows array and rendered into a new button
+// when the submit button is clicked, the input value is pushed to the movies array and rendered into a new button
 $("#submit-btn").on("click", function(event) {
 	event.preventDefault();
 
@@ -62,7 +62,7 @@ $("#submit-btn").on("click", function(event) {
 	renderButtons();
 });
 
-// listens for a click of any button with an id of tv-btn, then performs the displayGifs function
+// listens for a click of any button with an id of movie-btn, then performs the displayGifs function
 $(document).on("click", "#movie-btn", displayGifs);
 
 // starts and stops the animated gif on click
